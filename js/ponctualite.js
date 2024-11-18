@@ -217,8 +217,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.getElementById('toggleGeneral').addEventListener('click', function() {
                 myChart.data.datasets.forEach(dataset => {
-                    dataset.hidden = !dataset.hidden;
+                    dataset.hidden = false;
                 });
+                myChart.update();
+            });
+            document.getElementById('toggleGeneral').addEventListener('click', function() {
+                const toggleButton = document.getElementById('toggleGeneral');
+                if (toggleButton.classList.contains('hidden')) {
+                    myChart.data.datasets.forEach(dataset => {
+                        dataset.hidden = false;
+                    });
+                    toggleButton.classList.remove('hidden');
+                    toggleButton.classList.add('shown');
+                } else if (toggleButton.classList.contains('shown')) {
+                    myChart.data.datasets.forEach(dataset => {
+                        dataset.hidden = true;
+                    });
+                    toggleButton.classList.remove('shown');
+                    toggleButton.classList.add('hidden');
+                }
                 myChart.update();
             });
 
