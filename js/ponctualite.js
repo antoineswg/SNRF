@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('dataponctualite.json')
+    fetch('data/ponctualite.json')
         .then(response => response.json())
         .then(data => {
             const labels = data.data.lignea.map(item => item.year);
@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const percentageDataLigneU = data.data.ligneu.map(item => parseFloat(item.percentage.replace(',', '.')));
             const percentageDataLigneL = data.data.lignel.map(item => parseFloat(item.percentage.replace(',', '.')));
 
-
-
-            var ctx = document.getElementById('testChart').getContext('2d');
+            var ctx = document.getElementById('ponctualiteChart').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -68,64 +66,64 @@ document.addEventListener('DOMContentLoaded', function() {
                         {
                             label: 'Ligne H',
                             data: percentageDataLigneH,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
+                            backgroundColor: 'rgba(141, 94, 42, 0.3)',
+                            borderColor: 'rgba(141, 94, 42, 1)',
                             borderWidth: 3,
                             hidden: true 
                         },
                         {
                             label: 'Ligne J',
                             data: percentageDataLigneJ,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
+                            backgroundColor: 'rgba(213, 201, 0, 0.3)',
+                            borderColor: 'rgba(213, 201, 0, 1)',
                             borderWidth: 3,
                             hidden: true 
                         },
                         {
                             label: 'Ligne K',
                             data: percentageDataLigneK,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
-                            borderWidth: 3,
-                            hidden: true 
-                        },
-                        {
-                            label: 'Ligne N',
-                            data: percentageDataLigneN,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
-                            borderWidth: 3,
-                            hidden: true 
-                        },
-                        {
-                            label: 'Ligne P',
-                            data: percentageDataLigneP,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
-                            borderWidth: 3,
-                            hidden: true 
-                        },
-                        {
-                            label: 'Ligne R',
-                            data: percentageDataLigneR,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
-                            borderWidth: 3,
-                            hidden: true 
-                        },
-                        {
-                            label: 'Ligne U',
-                            data: percentageDataLigneU,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
+                            backgroundColor: 'rgba(159, 152, 37, 0.3)',
+                            borderColor: 'rgba(159, 152, 37, 1)',
                             borderWidth: 3,
                             hidden: true 
                         },
                         {
                             label: 'Ligne L',
                             data: percentageDataLigneL,
-                            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                            borderColor: 'rgba(0, 0, 0, 1)',
+                            backgroundColor: 'rgba(206, 173, 210, 0.3)',
+                            borderColor: 'rgba(206, 173, 210, 1)',
+                            borderWidth: 3,
+                            hidden: true 
+                        },
+                        {
+                            label: 'Ligne N',
+                            data: percentageDataLigneN,
+                            backgroundColor: 'rgba(0, 168, 143, 0.3)',
+                            borderColor: 'rgba(0, 168, 143, 1)',
+                            borderWidth: 3,
+                            hidden: true 
+                        },
+                        {
+                            label: 'Ligne P',
+                            data: percentageDataLigneP,
+                            backgroundColor: 'rgba(242, 142, 66, 0.3)',
+                            borderColor: 'rgba(242, 142, 66, 1)',
+                            borderWidth: 3,
+                            hidden: true 
+                        },
+                        {
+                            label: 'Ligne R',
+                            data: percentageDataLigneR,
+                            backgroundColor: 'rgba(243, 164, 186, 0.3)',
+                            borderColor: 'rgba(243, 164, 186, 1)',
+                            borderWidth: 3,
+                            hidden: true 
+                        },
+                        {
+                            label: 'Ligne U',
+                            data: percentageDataLigneU,
+                            backgroundColor: 'rgba(185, 8, 69, 0.3)',
+                            borderColor: 'rgba(185, 8, 69, 1)',
                             borderWidth: 3,
                             hidden: true 
                         }
@@ -135,13 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     scales: {
                         y: {
                             beginAtZero: false,
-                            min: 75,
+                            min: 80,
                             max: 100,
                             ticks: {
                                 callback: function(value) {
                                     return value + '%';
                                 },
                             }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
                         }
                     }
                 }
@@ -177,38 +180,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneK').addEventListener('click', function() {
+            document.getElementById('toggleLigneJ').addEventListener('click', function() {
                 myChart.data.datasets[6].hidden = !myChart.data.datasets[6].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneK').addEventListener('click', function() {
                 myChart.data.datasets[7].hidden = !myChart.data.datasets[7].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneN').addEventListener('click', function() {
                 myChart.data.datasets[8].hidden = !myChart.data.datasets[8].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneP').addEventListener('click', function() {
                 myChart.data.datasets[9].hidden = !myChart.data.datasets[9].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneR').addEventListener('click', function() {
                 myChart.data.datasets[10].hidden = !myChart.data.datasets[10].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneU').addEventListener('click', function() {
                 myChart.data.datasets[11].hidden = !myChart.data.datasets[11].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
+            document.getElementById('toggleLigneL').addEventListener('click', function() {
                 myChart.data.datasets[12].hidden = !myChart.data.datasets[12].hidden;
+                myChart.update();
+            });
+
+            document.getElementById('toggleGeneral').addEventListener('click', function() {
+                myChart.data.datasets.forEach(dataset => {
+                    dataset.hidden = !dataset.hidden;
+                });
                 myChart.update();
             });
 

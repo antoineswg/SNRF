@@ -1,4 +1,6 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -37,37 +39,117 @@ a.evitement {
     left: -99999rem;
     z-index: 100;
 }
+
 a.evitement:focus {
     left: 0;
 }
 
-.chart-container{
-    width: 500px;
-}
 
 /* Set up snapping behavior on the body or the container of the sections */
 body {
     scroll-snap-type: y mandatory;
-    overflow-y: scroll; /* Ensure vertical scrolling */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+    overflow-y: scroll;
+    /* Ensure vertical scrolling */
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove default margin */
 }
 
-/* Make each section fill the viewport */
 section {
     scroll-snap-align: start;
-    height: 100vh; /* Full viewport height for each section */
+    height: 100vh;
 }
 
-
-section.a {
-    background-color: #f3f4f6; /* Light background for section a */
+section.ponctualite {
+    background-color: #A1C5DD;
     display: flex;
     align-items: center;
-    justify-content: center;
-}   
+    justify-content: space-evenly;
+}
+
+.button-container {
+    width: 130px;
+    background-color: rgb(255, 255, 255 , 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    border: none;
+    background-color: transparent;
+}
 
 .chart-container {
-    width: 80%;
-    height: 80%;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(255, 255, 255 , 0.4);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#toggleLigneA {
+    background-image: url('images/logosLignes/rerALogoCouleur.png');
+}
+
+#toggleLigneB {
+    background-image: url('images/logosLignes/rerBLogoCouleur.png');
+}
+
+#toggleLigneC {
+    background-image: url('images/logosLignes/rerCLogoCouleur.png');
+}
+
+#toggleLigneD {
+    background-image: url('images/logosLignes/rerDLogoCouleur.png');
+}
+
+#toggleLigneE {
+    background-image: url('images/logosLignes/rerELogoCouleur.png');
+}
+
+#toggleLigneH {
+    background-image: url('images/logosLignes/TransilienHLogoCouleur.png');
+}
+
+#toggleLigneJ {
+    background-image: url('images/logosLignes/TransilienJLogoCouleur.png');
+}
+
+#toggleLigneK {
+    background-image: url('images/logosLignes/TransilienKLogoCouleur.png');
+}
+
+#toggleLigneL {
+    background-image: url('images/logosLignes/TransilienLLogoCouleur.png');
+}
+
+#toggleLigneN {
+    background-image: url('images/logosLignes/TransilienNLogoCouleur.png');
+}
+
+#toggleLigneP {
+    background-image: url('images/logosLignes/TransilienPLogoCouleur.png');
+}
+
+#toggleLigneR {
+    background-image: url('images/logosLignes/TransilienRLogoCouleur.png');
+}
+
+#toggleLigneU {
+    background-image: url('images/logosLignes/TransilienULogoCouleur.png');
+}
+
+#toggleLigneL {
+    background-image: url('images/logosLignes/TransilienLLogoCouleur.png');
+}
+
+#toggleGeneral {
+    background-image: url('images/logosLignes/GeneralLogoCouleur.png');
 }
