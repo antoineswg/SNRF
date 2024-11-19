@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     labels: labels,
                     datasets: [
                         {
-                            label: 'Ligne A',
+                            label: 'RER A',
                             data: percentageDataLigneA,
                             backgroundColor: 'rgba(227, 5, 28, 0.3)',
                             borderColor: 'rgba(227, 5, 28, 1)',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: false 
                         },
                         {
-                            label: 'Ligne B',
+                            label: 'RER B',
                             data: percentageDataLigneB,
                             backgroundColor: 'rgba(82, 145, 206, 0.3)',
                             borderColor: 'rgba(82, 145, 206, 1)',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne C',
+                            label: 'RER C',
                             data: percentageDataLigneC,
                             backgroundColor: 'rgba(255, 206, 0, 0.3)',
                             borderColor: 'rgba(255, 206, 0, 1)',
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne D',
+                            label: 'RER D',
                             data: percentageDataLigneD,
                             backgroundColor: 'rgba(0, 129, 79, 0.3)',
                             borderColor: 'rgba(0, 129, 79, 1)',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne E',
+                            label: 'RER E',
                             data: percentageDataLigneE,
                             backgroundColor: 'rgba(192, 65, 145, 0.3)',
                             borderColor: 'rgba(192, 65, 145, 1)',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne H',
+                            label: 'Transilien H',
                             data: percentageDataLigneH,
                             backgroundColor: 'rgba(141, 94, 42, 0.3)',
                             borderColor: 'rgba(141, 94, 42, 1)',
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne J',
+                            label: 'Transilien J',
                             data: percentageDataLigneJ,
                             backgroundColor: 'rgba(213, 201, 0, 0.3)',
                             borderColor: 'rgba(213, 201, 0, 1)',
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne K',
+                            label: 'Transilien K',
                             data: percentageDataLigneK,
                             backgroundColor: 'rgba(159, 152, 37, 0.3)',
                             borderColor: 'rgba(159, 152, 37, 1)',
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne L',
+                            label: 'Transilien L',
                             data: percentageDataLigneL,
                             backgroundColor: 'rgba(206, 173, 210, 0.3)',
                             borderColor: 'rgba(206, 173, 210, 1)',
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne N',
+                            label: 'Transilien N',
                             data: percentageDataLigneN,
                             backgroundColor: 'rgba(0, 168, 143, 0.3)',
                             borderColor: 'rgba(0, 168, 143, 1)',
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne P',
+                            label: 'Transilien P',
                             data: percentageDataLigneP,
                             backgroundColor: 'rgba(242, 142, 66, 0.3)',
                             borderColor: 'rgba(242, 142, 66, 1)',
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne R',
+                            label: 'Transilien R',
                             data: percentageDataLigneR,
                             backgroundColor: 'rgba(243, 164, 186, 0.3)',
                             borderColor: 'rgba(243, 164, 186, 1)',
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             hidden: true 
                         },
                         {
-                            label: 'Ligne U',
+                            label: 'Transilien U',
                             data: percentageDataLigneU,
                             backgroundColor: 'rgba(185, 8, 69, 0.3)',
                             borderColor: 'rgba(185, 8, 69, 1)',
@@ -189,31 +189,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 myChart.data.datasets[7].hidden = !myChart.data.datasets[7].hidden;
                 myChart.update();
             });
-            
-            document.getElementById('toggleLigneN').addEventListener('click', function() {
+
+            document.getElementById('toggleLigneL').addEventListener('click', function() {
                 myChart.data.datasets[8].hidden = !myChart.data.datasets[8].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneP').addEventListener('click', function() {
+            document.getElementById('toggleLigneN').addEventListener('click', function() {
                 myChart.data.datasets[9].hidden = !myChart.data.datasets[9].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneR').addEventListener('click', function() {
+            document.getElementById('toggleLigneP').addEventListener('click', function() {
                 myChart.data.datasets[10].hidden = !myChart.data.datasets[10].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneU').addEventListener('click', function() {
+            document.getElementById('toggleLigneR').addEventListener('click', function() {
                 myChart.data.datasets[11].hidden = !myChart.data.datasets[11].hidden;
                 myChart.update();
             });
             
-            document.getElementById('toggleLigneL').addEventListener('click', function() {
+            document.getElementById('toggleLigneU').addEventListener('click', function() {
                 myChart.data.datasets[12].hidden = !myChart.data.datasets[12].hidden;
                 myChart.update();
             });
+            
 
             document.getElementById('toggleGeneral').addEventListener('click', function() {
                 myChart.data.datasets.forEach(dataset => {
