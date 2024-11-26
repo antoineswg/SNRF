@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // récupère les données du fichier JSON
     fetch('data/ponctualite.json')
         .then(response => response.json())
         .then(data => {
+            // extrait les années pour les utiliser comme labels 
             const labels = data.data.lignea.map(item => item.year);
 
             var ctx = document.getElementById('ponctualiteChart').getContext('2d');
+            // définit les couleurs pour chaque ligne (couleurs officielles)
             const colors = {
                 lignea: { bg: 'rgba(227, 5, 28, 0.3)', border: 'rgba(227, 5, 28, 1)' },
                 ligneb: { bg: 'rgba(82, 145, 206, 0.3)', border: 'rgba(82, 145, 206, 1)' },
@@ -21,15 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 ligneu: { bg: 'rgba(185, 8, 69, 0.3)', border: 'rgba(185, 8, 69, 1)' }
             };
 
+            // crée les datasets pour chaque ligne avec les données et les couleurs correspondantes
             const datasets = Object.keys(colors).map((key, index) => ({
                 label: `Ligne ${key.toUpperCase().replace('LIGNE', '')}`,
                 data: data.data[key].map(item => parseFloat(item.percentage.replace(',', '.'))),
                 backgroundColor: colors[key].bg,
                 borderColor: colors[key].border,
                 borderWidth: 3,
-                hidden: index !== 0
+                hidden: index !== 0 // cache toutes les lignes sauf la première (RER A) par défaut
             }));
 
+            // crée le graphique avec chart.js
             var myChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -44,25 +49,27 @@ document.addEventListener('DOMContentLoaded', function() {
                             max: 100,
                             ticks: {
                                 callback: function(value) {
-                                    return value + '%';
+                                    return value + '%'; // ajoute le symbole % aux valeurs de l'axe Y
                                 },
                             }
                         }
                     },
                     plugins: {
                         legend: {
-                            display: false
+                            display: false // cache la légende
                         }
                     }
                 }
             });
 
+            // liste des boutons pour chaque ligne
             const toggleButtons = [
                 'toggleLigneA', 'toggleLigneB', 'toggleLigneC', 'toggleLigneD', 'toggleLigneE',
                 'toggleLigneH', 'toggleLigneJ', 'toggleLigneK', 'toggleLigneL', 'toggleLigneN',
                 'toggleLigneP', 'toggleLigneR', 'toggleLigneU'
             ];
 
+            // détecte un clic sur chaque bouton et affiche/masque la ligne qui correspond
             toggleButtons.forEach((id, index) => {
                 document.getElementById(id).addEventListener('click', function() {
                     myChart.data.datasets[index].hidden = !myChart.data.datasets[index].hidden;
@@ -70,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
             
-
+            // bouton pour afficher/masquer toutes les lignes
             const toggleAllButton = document.getElementById('toggleGeneral');
             toggleAllButton.addEventListener('click', function() {
                 const isHidden = toggleAllButton.classList.contains('hidden');
@@ -83,5 +90,5 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
         })
-        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => console.error('Error fetching data:', error)); // renvoie une erreur si les données n'ont pas pu être récupérées
 });
