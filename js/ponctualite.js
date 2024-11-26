@@ -150,93 +150,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            document.getElementById('toggleLigneA').addEventListener('click', function() {
-                myChart.data.datasets[0].hidden = !myChart.data.datasets[0].hidden;
-                myChart.update();
-            });
+            const toggleButtons = [
+                'toggleLigneA', 'toggleLigneB', 'toggleLigneC', 'toggleLigneD', 'toggleLigneE',
+                'toggleLigneH', 'toggleLigneJ', 'toggleLigneK', 'toggleLigneL', 'toggleLigneN',
+                'toggleLigneP', 'toggleLigneR', 'toggleLigneU'
+            ];
 
-            document.getElementById('toggleLigneB').addEventListener('click', function() {
-                myChart.data.datasets[1].hidden = !myChart.data.datasets[1].hidden;
-                myChart.update();
-            });
-
-            document.getElementById('toggleLigneC').addEventListener('click', function() {
-                myChart.data.datasets[2].hidden = !myChart.data.datasets[2].hidden;
-                myChart.update();
-            });
-
-            document.getElementById('toggleLigneD').addEventListener('click', function() {
-                myChart.data.datasets[3].hidden = !myChart.data.datasets[3].hidden;
-                myChart.update();
-            });
-
-            document.getElementById('toggleLigneE').addEventListener('click', function() {
-                myChart.data.datasets[4].hidden = !myChart.data.datasets[4].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneH').addEventListener('click', function() {
-                myChart.data.datasets[5].hidden = !myChart.data.datasets[5].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneJ').addEventListener('click', function() {
-                myChart.data.datasets[6].hidden = !myChart.data.datasets[6].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneK').addEventListener('click', function() {
-                myChart.data.datasets[7].hidden = !myChart.data.datasets[7].hidden;
-                myChart.update();
-            });
-
-            document.getElementById('toggleLigneL').addEventListener('click', function() {
-                myChart.data.datasets[8].hidden = !myChart.data.datasets[8].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneN').addEventListener('click', function() {
-                myChart.data.datasets[9].hidden = !myChart.data.datasets[9].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneP').addEventListener('click', function() {
-                myChart.data.datasets[10].hidden = !myChart.data.datasets[10].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneR').addEventListener('click', function() {
-                myChart.data.datasets[11].hidden = !myChart.data.datasets[11].hidden;
-                myChart.update();
-            });
-            
-            document.getElementById('toggleLigneU').addEventListener('click', function() {
-                myChart.data.datasets[12].hidden = !myChart.data.datasets[12].hidden;
-                myChart.update();
-            });
-            
-
-            document.getElementById('toggleGeneral').addEventListener('click', function() {
-                myChart.data.datasets.forEach(dataset => {
-                    dataset.hidden = false;
+            toggleButtons.forEach((id, index) => {
+                document.getElementById(id).addEventListener('click', function() {
+                    myChart.data.datasets[index].hidden = !myChart.data.datasets[index].hidden;
+                    myChart.update();
                 });
-                myChart.update();
             });
-            document.getElementById('toggleGeneral').addEventListener('click', function() {
-                const toggleButton = document.getElementById('toggleGeneral');
-                if (toggleButton.classList.contains('hidden')) {
-                    myChart.data.datasets.forEach(dataset => {
-                        dataset.hidden = false;
-                    });
-                    toggleButton.classList.remove('hidden');
-                    toggleButton.classList.add('shown');
-                } else if (toggleButton.classList.contains('shown')) {
-                    myChart.data.datasets.forEach(dataset => {
-                        dataset.hidden = true;
-                    });
-                    toggleButton.classList.remove('shown');
-                    toggleButton.classList.add('hidden');
-                }
+            
+
+            const toggleAllButton = document.getElementById('toggleGeneral');
+            toggleAllButton.addEventListener('click', function() {
+                const isHidden = toggleAllButton.classList.contains('hidden');
+                myChart.data.datasets.forEach(dataset => {
+                    dataset.hidden = !isHidden;
+                });
+                toggleAllButton.classList.toggle('hidden', !isHidden);
+                toggleAllButton.classList.toggle('shown', isHidden);
                 myChart.update();
             });
 
