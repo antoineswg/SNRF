@@ -1,0 +1,84 @@
+/* Deprogrammation */
+
+.ligneDeprog {
+    display: flex;
+    align-items: center;
+}
+
+.logoDeprog img {
+    width: 30px;
+}
+
+.logoDeprog, .anneeDeprog, .pourcentageDeprog, .trainsDeprog{
+    margin: 5px;
+    text-align: center;
+}
+
+.logoDeprog img{
+    width: 30px;
+}
+
+.anneeDeprog{
+    width: 100px;
+    color: white;
+}
+.pourcentageDeprog{
+    width: 70px;
+    color: #FCFF43;
+}
+.trainsDeprog{
+    margin-left: 30px;
+    color: white;
+}
+
+.deprog2020, .deprog2022, .deprogMoyenne {
+    background-color: #6198EA;
+    padding: 3px;
+}
+
+.deprog2021, .deprog2023{
+    background-color: #464FA2;
+    padding: 3px;
+}
+
+.tableauDeprog{
+    background-color: #3B3A3A;
+    padding: 30px;
+    padding-bottom: 15px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+
+.ligneDeprogInf{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    color: white;
+}
+
+.logoDeprogInf{
+    margin-left: 10px;
+}
+.anneeDeprogInf{
+    margin-left: 50px;
+}
+.pourcentageDeprogInf{
+    margin-left: 45px;
+}
+.trainsDeprogInf{
+    margin-left: 200px;
+}
+
+#deprogLigneSuivante{
+    margin-left: 20px;
+}
+.trainsDeprogInf button {
+    color: white;
+    font-size: .75rem;
+    background-color: transparent;
+    border: none; 
+}
+
+.deprogFiller{
+    width: 30%;}
