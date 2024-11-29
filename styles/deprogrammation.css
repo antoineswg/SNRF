@@ -77,7 +77,13 @@
     color: white;
     font-size: .75rem;
     background-color: transparent;
-    border: none; 
+    border: none;
+    border-radius: 30%;
+}
+
+.trainsDeprogInf button:hover {
+    background-color: #6464644b;
+
 }
 
 .deprogFiller{

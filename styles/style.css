@@ -59,4 +59,9 @@ section {
     height: 100vh;
 }
 
-
+@media screen and (min-width: 1281px) {
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
