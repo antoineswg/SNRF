@@ -49,9 +49,10 @@
 .tableauDeprog{
     background-color: #3B3A3A;
     padding: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     font-size: 1.25rem;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .ligneDeprogInf{
@@ -60,6 +61,12 @@
     align-items: center;
     font-size: .75rem;
     color: white;
+    background-color: #3B3A3A;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .logoDeprogInf{
@@ -73,6 +80,7 @@
 }
 .trainsDeprogInf{
     margin-left: 200px;
+    
 }
 
 #deprogLigneSuivante{
@@ -83,12 +91,13 @@
     font-size: .75rem;
     background-color: transparent;
     border: none; 
+    border-radius: 3px;
+}
+
+.trainsDeprogInf button:hover {
+    background-color: rgba(181, 181, 181, 0.288);
+
 }
 
 .deprogFiller{
     width: 30%;}
-
-.tableauDeprog button:hover{
-    background-color: rgba(181, 181, 181, 0.288);
-    border-radius: 3px;
-}
