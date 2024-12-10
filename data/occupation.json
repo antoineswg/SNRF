@@ -1,0 +1,342 @@
+{"source": "Autorité des transports",
+  "url": "https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/",
+  "data": {
+    "lignea": [
+        {
+            "year": 2018,
+            "percentage": "47"
+          },
+          {
+            "year": 2019,
+            "percentage": "49"
+          },
+          {
+            "year": 2020,
+            "percentage": "24"
+          },
+          {
+            "year": 2021,
+            "percentage": "32"
+          },
+          {
+            "year": 2022,
+            "percentage": "46"
+          },
+          {
+            "year": 2023,
+            "percentage": "49"
+          }
+    ],
+    "ligneb": [
+        {
+            "year": 2018,
+            "percentage": "64"
+          },
+          {
+            "year": 2019,
+            "percentage": "65"
+          },
+          {
+            "year": 2020,
+            "percentage": "46"
+          },
+          {
+            "year": 2021,
+            "percentage": "42"
+          },
+          {
+            "year": 2022,
+            "percentage": "67"
+          },
+          {
+            "year": 2023,
+            "percentage": "75"
+          }
+    ],
+    "lignec": [
+        {
+            "year": 2018,
+            "percentage": "22"
+          },
+          {
+            "year": 2019,
+            "percentage": "23"
+          },
+          {
+            "year": 2020,
+            "percentage": "15"
+          },
+          {
+            "year": 2021,
+            "percentage": "15"
+          },
+          {
+            "year": 2022,
+            "percentage": "19"
+          },
+          {
+            "year": 2023,
+            "percentage": "19"
+          }
+    ],
+    "ligned": [
+        {
+            "year": 2018,
+            "percentage": "27"
+          },
+          {
+            "year": 2019,
+            "percentage": "26"
+          },
+          {
+            "year": 2020,
+            "percentage": "16"
+          },
+          {
+            "year": 2021,
+            "percentage": "17"
+          },
+          {
+            "year": 2022,
+            "percentage": "21"
+          },
+          {
+            "year": 2023,
+            "percentage": "21"
+          }
+    ],
+    "lignee": [
+        {
+            "year": 2018,
+            "percentage": "34"
+          },
+          {
+            "year": 2019,
+            "percentage": "33"
+          },
+          {
+            "year": 2020,
+            "percentage": "22"
+          },
+          {
+            "year": 2021,
+            "percentage": "22"
+          },
+          {
+            "year": 2022,
+            "percentage": "31"
+          },
+          {
+            "year": 2023,
+            "percentage": "33"
+          }
+    ],
+    "ligneh": [
+        {
+            "year": 2018,
+            "percentage": "28"
+          },
+          {
+            "year": 2019,
+            "percentage": "29"
+          },
+          {
+            "year": 2020,
+            "percentage": "20"
+          },
+          {
+            "year": 2021,
+            "percentage": "22"
+          },
+          {
+            "year": 2022,
+            "percentage": "32"
+          },
+          {
+            "year": 2023,
+            "percentage": "35"
+          }
+    ],
+    "lignej": [
+        {
+            "year": 2018,
+            "percentage": "28"
+          },
+          {
+            "year": 2019,
+            "percentage": "28"
+          },
+          {
+            "year": 2020,
+            "percentage": "17"
+          },
+          {
+            "year": 2021,
+            "percentage": "19"
+          },
+          {
+            "year": 2022,
+            "percentage": "29"
+          },
+          {
+            "year": 2023,
+            "percentage": "33"
+          }
+    ],
+    "lignek": [
+        {
+            "year": 2018,
+            "percentage": "25"
+          },
+          {
+            "year": 2019,
+            "percentage": "26"
+          },
+          {
+            "year": 2020,
+            "percentage": "15"
+          },
+          {
+            "year": 2021,
+            "percentage": "16"
+          },
+          {
+            "year": 2022,
+            "percentage": "24"
+          },
+          {
+            "year": 2023,
+            "percentage": "25"
+          }
+    ],
+    "lignen": [
+        {
+            "year": 2018,
+            "percentage": "19"
+          },
+          {
+            "year": 2019,
+            "percentage": "18"
+          },
+          {
+            "year": 2020,
+            "percentage": "11"
+          },
+          {
+            "year": 2021,
+            "percentage": "10"
+          },
+          {
+            "year": 2022,
+            "percentage": "14"
+          },
+          {
+            "year": 2023,
+            "percentage": "16"
+          }
+    ],
+    "lignep": [
+        {
+            "year": 2018,
+            "percentage": "36"
+          },
+          {
+            "year": 2019,
+            "percentage": "39"
+          },
+          {
+            "year": 2020,
+            "percentage": "26"
+          },
+          {
+            "year": 2021,
+            "percentage": "27"
+          },
+          {
+            "year": 2022,
+            "percentage": "38"
+          },
+          {
+            "year": 2023,
+            "percentage": "37"
+          }
+    ],
+    "ligner": [
+        {
+            "year": 2018,
+            "percentage": "24"
+          },
+          {
+            "year": 2019,
+            "percentage": "25"
+          },
+          {
+            "year": 2020,
+            "percentage": "15"
+          },
+          {
+            "year": 2021,
+            "percentage": "15"
+          },
+          {
+            "year": 2022,
+            "percentage": "21"
+          },
+          {
+            "year": 2023,
+            "percentage": "28"
+          }
+    ],
+    "ligneu": [
+        {
+            "year": 2018,
+            "percentage": "26"
+          },
+          {
+            "year": 2019,
+            "percentage": "25"
+          },
+          {
+            "year": 2020,
+            "percentage": "18"
+          },
+          {
+            "year": 2021,
+            "percentage": "18"
+          },
+          {
+            "year": 2022,
+            "percentage": "23"
+          },
+          {
+            "year": 2023,
+            "percentage": "26"
+          }
+    ],
+    "lignel": [
+        {
+            "year": 2018,
+            "percentage": "30"
+          },
+          {
+            "year": 2019,
+            "percentage": "30"
+          },
+          {
+            "year": 2020,
+            "percentage": "21"
+          },
+          {
+            "year": 2021,
+            "percentage": "21"
+          },
+          {
+            "year": 2022,
+            "percentage": "34"
+          },
+          {
+            "year": 2023,
+            "percentage": "35"
+          }
+    ]
+}}
