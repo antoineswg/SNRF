@@ -209,6 +209,32 @@
             "percentage": "25"
           }
     ],
+    "lignel": [
+        {
+            "year": 2018,
+            "percentage": "30"
+          },
+          {
+            "year": 2019,
+            "percentage": "30"
+          },
+          {
+            "year": 2020,
+            "percentage": "21"
+          },
+          {
+            "year": 2021,
+            "percentage": "21"
+          },
+          {
+            "year": 2022,
+            "percentage": "34"
+          },
+          {
+            "year": 2023,
+            "percentage": "35"
+          }
+    ],
     "lignen": [
         {
             "year": 2018,
@@ -311,32 +337,6 @@
           {
             "year": 2023,
             "percentage": "26"
-          }
-    ],
-    "lignel": [
-        {
-            "year": 2018,
-            "percentage": "30"
-          },
-          {
-            "year": 2019,
-            "percentage": "30"
-          },
-          {
-            "year": 2020,
-            "percentage": "21"
-          },
-          {
-            "year": 2021,
-            "percentage": "21"
-          },
-          {
-            "year": 2022,
-            "percentage": "34"
-          },
-          {
-            "year": 2023,
-            "percentage": "35"
           }
     ]
 }}
