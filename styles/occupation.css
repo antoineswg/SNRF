@@ -1,0 +1,24 @@
+/* Occupation */
+
+section.occupation {
+    background-color: #A1C5DD;
+}
+
+.occupationFiller {
+    width: 40%;
+}
+
+.tableauOccupation{
+    font-size: 1.25rem;
+    background-color: white;
+    padding: 20px;
+}
+
+.ligneOccupation{
+    display: flex;
+    align-items: center;
+}
+
+.tableauOccupation img{
+    height: 30px;
+}

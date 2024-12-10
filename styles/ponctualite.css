@@ -10,17 +10,6 @@ section.ponctualite, section.deprogrammation {
     justify-content: space-evenly;
 }
 
-.title{
-    text-align: center;
-}
-
-.chartAndControls{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70%;
-}
-
 .button-container-ponctualite {
     width: 145px;
     background-color: rgb(255, 255, 255 , 0.6);
