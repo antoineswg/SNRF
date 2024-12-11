@@ -73,3 +73,48 @@ section {
 .infos{
     background-color: #ACD4CA;
 }
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 90px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    box-shadow: 0 0 10px 0 rgba(0, 56, 101, 0.2);
+}
+
+.topbar img {
+    height: 70px;
+    margin-left: 10px;
+}
+
+.topbar-liens{
+    font-size: 1.15rem;
+    margin-right: 30px;
+    padding-bottom: 15px;
+}
+
+.topbar-liens a{
+    color: #003865;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.topbar-liens a:hover{
+    border-bottom: #003865 5px solid;
+}
