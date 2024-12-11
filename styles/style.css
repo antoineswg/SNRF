@@ -50,7 +50,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: "Teachers", sans-serif;
-    background-color: #ACD4CA;
+    position: relative;
 }
 
 section {
@@ -59,7 +59,8 @@ section {
 }
 
 .title{
-    text-align: center;
+    margin-left: 40px;
+    font-size: 1.5rem;
 }
 
 .chartAndControls{
@@ -67,4 +68,8 @@ section {
     align-items: center;
     justify-content: space-evenly;
     height: 70%;
+}
+
+.infos{
+    background-color: #ACD4CA;
 }

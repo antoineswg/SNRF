@@ -1,8 +1,8 @@
 /* Occupation */
 
-section.occupation {
+/* section.occupation {
     background-color: #A1C5DD;
-}
+} */
 
 .occupationFiller {
     width: 40%;
@@ -10,8 +10,9 @@ section.occupation {
 
 .tableauOccupation{
     font-size: 1.25rem;
-    background-color: white;
+    background-color:#dcf1ff;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .ligneOccupation{
@@ -19,6 +20,48 @@ section.occupation {
     align-items: center;
 }
 
+.logoOccupation{
+    margin-right: 20px;
+}
+
+.anneeOccupation{
+    width: 60px;
+}
+.separationOccupation{
+    margin-right: 10px;
+}
+
+.categorieOccupation{
+    width: 120px;
+}
+
+.pourcentageOccupation{
+    margin-left: 5px;
+    width: 50px;
+}
+
 .tableauOccupation img{
     height: 30px;
+}
+
+.controlesOccupation{
+    display: flex;
+    justify-content: center;
+}
+
+.controlesOccupation button{
+    background-color: #dcf1ff;
+    border: none;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    color: #003865;
+}
+
+.controlesOccupation button:hover{
+    cursor: pointer;
+    border: #003865 solid 3px;
 }

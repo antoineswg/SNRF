@@ -96,7 +96,7 @@
 
 .trainsDeprogInf button:hover {
     background-color: rgba(181, 181, 181, 0.288);
-
+    cursor: pointer;
 }
 
 .deprogFiller{

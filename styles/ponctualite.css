@@ -1,8 +1,8 @@
 /* Ponctualité */
 
-section.ponctualite {
+/* section.ponctualite {
     background-color: #A1C5DD;
-}
+} */
 
 section.ponctualite, section.deprogrammation {
     display: flex;
@@ -12,7 +12,7 @@ section.ponctualite, section.deprogrammation {
 
 .button-container-ponctualite {
     width: 145px;
-    background-color: rgb(255, 255, 255 , 0.6);
+    background-color: #dcf1ff;
     border-radius: 10px;
     padding: 10px;
 }
@@ -28,10 +28,14 @@ section.ponctualite, section.deprogrammation {
     background-color: transparent;
 }
 
+.button-container-ponctualite button:hover {
+    cursor: pointer;
+}
+
 .chart-container-ponctualite {
     width: 800px;
     height: 400px;
-    background-color: rgb(255, 255, 255 , 0.6);
+    background-color: #dcf1ff;
     border-radius: 20px;
     padding: 15px;
 }
