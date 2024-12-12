@@ -77,10 +77,6 @@ section {
     max-width: 1280px;
 }
 
-.infos{
-    background-color: #ACD4CA;
-}
-
 .topbar {
     position: fixed;
     top: 0;
@@ -147,4 +143,34 @@ section.ponctualite, section.deprogrammation, section.occupation {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 100px 0 rgba(0, 56, 101, 0.05);
+}
+
+#infos{
+    background-color: #A1D6CA;
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+}
+
+.infosImg{
+    height: 90%;
+    margin-right: 80px;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #154734;
+    padding-right: 40px;
+}
+
+#infos p{
+    font-size: 1.25rem;
+    color: #154734;
+    padding-right: 40px;
+}
+
+.infos-blabla img{
+    height: 30px;
 }

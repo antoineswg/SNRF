@@ -18,10 +18,11 @@
 </head>
 
 <body>
-    <a href="#contenu" class="evitement">Aller au contenu</a>
+    <div>
+        <a href="#contenu" class="evitement">Aller au contenu</a>
     <div class="topbar">
         <div>
-            <img src="styles/images/SNRF.png" alt="logo SNRF" class="logo">
+            <a href="index.html#infos"><img src="styles/images/SNRF.png" alt="logo SNRF" class="logo"></a>
         </div>
         <div class="topbar-liens">
             <a href="#ponctualite">Ponctualité</a>
@@ -29,6 +30,17 @@
             <a href="#occupation">Occupation</a>
         </div>
     </div>
+    <section id="infos">
+        <img src="styles/images/illustrations/header.png" alt="" class="infosImg">
+        <div class="infos-blabla">
+            <h1>Et si en fait la qualité des transports était pas si nulle ?</h1>
+            <p>
+                La SNRF est un projet étudiant visant à mettre en lumière l'évolution de la qualité des transports dans les transports en commun franciliens. <br>
+                Ces visualisations de données nous permettent de remarquer que, malgré les nombreux retards et les trains bondés, les transports en commun franciliens ont connu une nette amélioration de leur qualité de service ces dernières années.
+            </p>
+            <a href="index.html#contenu"><img src="styles/images/svg/fleche-bas-vert.svg" alt=""></a>
+        </div>
+    </section>
     <div id="contenu">
         <section class="ponctualite" id="ponctualite">
             <div class="title">
@@ -51,8 +63,13 @@
                     <button id="toggleLigneU"></button>
                     <button id="toggleGeneral" class="hidden"></button>
                 </div>
-                <div class="chart-container-ponctualite">
-                    <canvas id="ponctualiteChart"></canvas>
+                <div>
+                    <div class="chart-container-ponctualite">
+                        <canvas id="ponctualiteChart"></canvas>
+                    </div>
+                    <small>
+                        Source : <a href="https://www.qualitetransports.gouv.fr/les-rapports-annuels-de-l-aqst-r173.html">qualitetransports.gouv</a>
+                    </small>
                 </div>
             </div>
         </section>
@@ -73,14 +90,19 @@
                     <img src="styles/images/illustrations/deprogrammation.png">
                 </div>
                 <div>
-                    <div class="tableauDeprog">
-                    </div>
-                    <div class="ligneDeprogInf">
-                        <div class="logoDeprogInf">ligne</div>
-                        <div class="anneeDeprogInf">année</div>
-                        <div class="pourcentageDeprogInf">pourcentage</div>
-                        <div class="trainsDeprogInf">
-                        <button id="deprogLignePrecedente"><</button><button id="deprogLigneSuivante">></button></div>
+                    <div>
+                        <div class="tableauDeprog">
+                        </div>
+                        <div class="ligneDeprogInf">
+                            <div class="logoDeprogInf">ligne</div>
+                            <div class="anneeDeprogInf">année</div>
+                            <div class="pourcentageDeprogInf">pourcentage</div>
+                            <div class="trainsDeprogInf">
+                            <button id="deprogLignePrecedente"></button><button id="deprogLigneSuivante"></button></div>
+                        </div>
+                        <small>
+                            Source : <a href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
+                        </small>
                     </div>
                 </div>
             </div>
@@ -91,11 +113,16 @@
                 <h2>Pourcentage d'occupation des trains de 2018 à 2023</h2>
             </div>
             <div class="chartAndControls">
-                <div class="tableau">
-                    <div class="tableauOccupation">
+
+                    <div class="tableau">
+                        <div class="tableauOccupation">
+                        </div>
+                        <small>
+                            Source : <a href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
+                        </small>
+                        <div class="controlesOccupation"><button id="occupationLignePrecedente"></button><button id="occupationLigneSuivante"></button></div>
                     </div>
-                    <div class="controlesOccupation"><button id="occupationLignePrecedente"><</button><button id="occupationLigneSuivante">></button></div>
-                </div>
+
                 <div class="occupationFiller filler">
                     <img src="styles/images/illustrations/occupation.png">
                     <p>
@@ -108,6 +135,7 @@
                 </div>
             </div>
         </section>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -49,10 +49,10 @@
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    font-weight: bolder;
-    font-size: 1.25rem;
-    color: #003865;
     box-shadow: 0 0 100px 0 rgba(0, 56, 101, 0.05);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
 }
 
 .controlesOccupation button:hover{
@@ -63,4 +63,12 @@
 .occupationFiller img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#occupationLignePrecedente {
+    background-image: url('images/svg/fleche-gauche-dark.svg');
+}
+
+#occupationLigneSuivante {
+    background-image: url('images/svg/fleche-droite-dark.svg');
 }
