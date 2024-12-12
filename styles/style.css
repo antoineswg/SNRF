@@ -51,16 +51,22 @@ body {
     margin: 0;
     font-family: "Teachers", sans-serif;
     position: relative;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    background-color: #FDFDFD;
 }
 
 section {
     scroll-snap-align: start;
     height: 100vh;
+    padding-top: 100px;
 }
 
 .title{
     margin-left: 40px;
     font-size: 1.5rem;
+    max-width: 1280px;
 }
 
 .chartAndControls{
@@ -68,6 +74,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     height: 70%;
+    max-width: 1280px;
 }
 
 .infos{
@@ -93,6 +100,8 @@ section {
     justify-content: space-between;
     align-items: end;
     box-shadow: 0 0 10px 0 rgba(0, 56, 101, 0.2);
+    max-width: 1280px;
+    min-width: 700px;
 }
 
 .topbar img {
@@ -117,4 +126,25 @@ section {
 
 .topbar-liens a:hover{
     border-bottom: #003865 5px solid;
+}
+
+section.ponctualite, section.deprogrammation, section.occupation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.filler img{
+    width: 100%;
+}
+
+.filler p{
+    margin: 20px;
+}
+
+.filler{
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 100px 0 rgba(0, 56, 101, 0.05);
 }

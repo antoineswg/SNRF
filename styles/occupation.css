@@ -1,18 +1,11 @@
 /* Occupation */
 
-/* section.occupation {
-    background-color: #A1C5DD;
-} */
-
-.occupationFiller {
-    width: 40%;
-}
-
 .tableauOccupation{
     font-size: 1.25rem;
-    background-color:#dcf1ff;
+    background-color:white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 100px 0 rgba(0, 56, 101, 0.05);
 }
 
 .ligneOccupation{
@@ -50,7 +43,7 @@
 }
 
 .controlesOccupation button{
-    background-color: #dcf1ff;
+    background-color: white;
     border: none;
     margin: 10px;
     width: 40px;
@@ -59,9 +52,15 @@
     font-weight: bolder;
     font-size: 1.25rem;
     color: #003865;
+    box-shadow: 0 0 100px 0 rgba(0, 56, 101, 0.05);
 }
 
 .controlesOccupation button:hover{
     cursor: pointer;
     border: #003865 solid 3px;
+}
+
+.occupationFiller img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
