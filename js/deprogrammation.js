@@ -4,12 +4,14 @@ function updateDisplayDeprog(data) {
     let ligneActiveDeprog = Object.keys(data.data)[currentIndex]; // récupère la clé de la ligne que l'on veut afficher
     let ligneDeprog = data.data[ligneActiveDeprog]; // récupère les données associées à la clé
 
+    nomLigneActive = "ligne " + ligneActiveDeprog.replace('ligne', '');
+
     // met à jour l'affichage des données de déprogrammation
     for (let i = 0; i < ligneDeprog.length; i++) {
 
         document.querySelector(`.tableauDeprog`).innerHTML += 
         '<div class="ligneDeprog deprog'+ligneDeprog[i].year+'">'+
-        '<div class="logoDeprog"><img src="styles/images/logosLignes/'+ligneActiveDeprog+'Logo.png"></div>'+
+        '<div class="logoDeprog"><img src="styles/images/logosLignes/'+ligneActiveDeprog+'Logo.png" alt="Logo de la '+nomLigneActive+'"></div>'+
         '<div class="anneeDeprog">'+ligneDeprog[i].year+'</div>'+
         '<div class="pourcentageDeprog">'+ligneDeprog[i].percentage+' %</div>'+
         '<div class="trainsDeprog">de trains déprogrammés</div>'+    
@@ -21,9 +23,9 @@ function updateDisplayDeprog(data) {
     let moyenne = percentages.reduce((a, b) => a + b, 0) / percentages.length;
     document.querySelector(`.tableauDeprog`).innerHTML += 
         '<div class="ligneDeprog deprogMoyenne">'+
-        '<div class="logoDeprog"><img src="styles/images/logosLignes/'+ligneActiveDeprog+'Logo.png"></div>'+
+        '<div class="logoDeprog"><img src="styles/images/logosLignes/'+ligneActiveDeprog+'Logo.png" alt="Logo de la '+nomLigneActive+'"></div>'+
         '<div class="anneeDeprog">Moyenne</div>'+
-        '<div class="pourcentageDeprog">'+moyenne.toFixed(1)+' %</div>'+
+        '<div class="pourcentageDeprog">'+moyenne.toFixed(1)+'%</div>'+
         '<div class="trainsDeprog">de trains déprogrammés</div>'+    
         '</div>';
 }

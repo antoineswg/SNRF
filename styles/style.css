@@ -44,6 +44,10 @@ a.evitement:focus {
     left: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -207,9 +211,27 @@ footer a:hover{
 
 #mentionslegales{
     padding: 40px;
+    height: 110vh;
 }
 
 #mentionslegales h1{
-    margin-top: 0px;
+    margin: 0px;
     color: #000;
+}
+
+#mentionslegales a{
+    color: #DC582A;
+}
+
+.titreMentionsLegales{
+    display: flex;
+    align-items: center;
+}
+
+.titreMentionsLegales a{
+    margin-right: 40px;
+}
+
+.titreMentionsLegales img{
+    height: 40px;
 }

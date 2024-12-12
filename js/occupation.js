@@ -29,13 +29,15 @@ function updateDisplayOccupation(data) {
             imgOccupation = 'faible';
         }
 
+        nomLigneActive = "ligne " + ligneActiveOccupation.replace('ligne', '');
+
         document.querySelector(`.tableauOccupation`).innerHTML += 
         '<div class="ligneOccupation occupation'+ligneOccupation[i].year+'">'+
-        '<div class="logoOccupation"><img src="styles/images/logosLignes/'+ligneActiveOccupation+'Logo.png"></div>'+
+        '<div class="logoOccupation"><img src="styles/images/logosLignes/'+ligneActiveOccupation+'Logo.png" alt="Logo de la '+nomLigneActive+'"></div>'+
         '<div class="anneeOccupation">'+ligneOccupation[i].year+'</div>'+
         '<div class="categorieOccupation"><span class="separationOccupation">-</span> ' + categorieOccupation + '</div> '+
         '<div class="imgOccupation"><img src="styles/images/nivOcccupation/'+ imgOccupation +'.png" alt=""></div>'+
-        '<div class="pourcentageOccupation">'+ligneOccupation[i].percentage+' %</div>'+    
+        '<div class="pourcentageOccupation">'+ligneOccupation[i].percentage+'%</div>'+    
         '</div>';
     }
 }
