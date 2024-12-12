@@ -12,136 +12,153 @@
     <link rel="stylesheet" href="styles/occupation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div>
         <a href="#contenu" class="evitement">Aller au contenu</a>
-    <div class="topbar">
-        <div>
-            <a href="index.html#infos"><img src="styles/images/SNRF.png" alt="Retour au haut de page" class="logo"></a>
-        </div>
-        <div class="topbar-liens">
-            <a href="#ponctualite">Ponctualité</a>
-            <a href="#deprogrammation">Déprogrammation</a>
-            <a href="#occupation">Occupation</a>
-        </div>
-    </div>
-    <section id="infos">
-        <img src="styles/images/illustrations/header.png" class="infosImg">
-        <div class="infos-blabla">
-            <h1>Et si en fait la qualité des transports était pas si nulle ?</h1>
-            <p>
-                La SNRF est un projet étudiant visant à mettre en lumière l'évolution de la qualité des transports dans les transports en commun franciliens. <br>
-                Ces visualisations de données nous permettent de remarquer que, malgré les nombreux retards et les trains bondés, les transports en commun franciliens ont connu une nette amélioration de leur qualité de service ces dernières années.
-            </p>
-            <a href="index.html#contenu"><img src="styles/images/svg/fleche-bas-vert.svg" alt=""></a>
-        </div>
-    </section>
-    <div id="contenu">
-        <section class="ponctualite" id="ponctualite">
-            <div class="title">
-                <h2>Pourcentage de ponctualité des RER et Transiliens de 2014 à 2022</h2>
+        <div class="topbar">
+            <div>
+                <a href="index.html#infos"><img src="styles/images/SNRF.png" alt="Retour au haut de page"
+                        class="logo"></a>
             </div>
-            <div class="chartAndControls">
-                <div class="button-container-ponctualite">
-                    <button id="toggleLigneA" alt="Activer/désactiver la ligne A"></button>
-                    <button id="toggleLigneB" alt="Activer/désactiver la ligne B"></button>
-                    <button id="toggleLigneC" alt="Activer/désactiver la ligne C"></button>
-                    <button id="toggleLigneD" alt="Activer/désactiver la ligne D"></button>
-                    <button id="toggleLigneE" alt="Activer/désactiver la ligne E"></button>
-                    <button id="toggleLigneH" alt="Activer/désactiver la ligne H"></button>
-                    <button id="toggleLigneJ" alt="Activer/désactiver la ligne J"></button>
-                    <button id="toggleLigneK" alt="Activer/désactiver la ligne K"></button>
-                    <button id="toggleLigneL" alt="Activer/désactiver la ligne L"></button>
-                    <button id="toggleLigneN" alt="Activer/désactiver la ligne N"></button>
-                    <button id="toggleLigneP" alt="Activer/désactiver la ligne P"></button>
-                    <button id="toggleLigneR" alt="Activer/désactiver la ligne R"></button>
-                    <button id="toggleLigneU" alt="Activer/désactiver la ligne U"></button>
-                    <button id="toggleGeneral" alt="Activer/désactiver toutes les lignes" class="hidden"></button>
-                </div>
-                <div>
-                    <div class="chart-container-ponctualite">
-                        <canvas id="ponctualiteChart"></canvas>
-                    </div>
-                    <small>
-                        Source : <a href="https://www.qualitetransports.gouv.fr/les-rapports-annuels-de-l-aqst-r173.html">qualitetransports.gouv</a>
-                    </small>
-                </div>
+            <div class="topbar-liens">
+                <a href="#ponctualite">Ponctualité</a>
+                <a href="#deprogrammation">Déprogrammation</a>
+                <a href="#occupation">Occupation</a>
+            </div>
+        </div>
+        <section id="infos">
+            <img src="styles/images/illustrations/header.png" class="infosImg">
+            <div class="infos-blabla">
+                <h1>Et si en fait la qualité des transports était pas si nulle ?</h1>
+                <p>
+                    La SNRF est un projet étudiant visant à mettre en lumière l'évolution de la qualité des transports
+                    dans les transports en commun franciliens. <br>
+                    Ces visualisations de données nous permettent de remarquer que, malgré les nombreux retards et les
+                    trains bondés, les transports en commun franciliens ont connu une nette amélioration de leur qualité
+                    de service ces dernières années.
+                </p>
+                <a href="index.html#contenu"><img src="styles/images/svg/fleche-bas-vert.svg" alt=""></a>
             </div>
         </section>
-
-        <section class="deprogrammation" id="deprogrammation">
-            <div class="title">
-                <h2>Pourcentage de déprogrammation des trains de 2020 à 2023</h2>
-            </div>
-            <div class="chartAndControls">
-                <div class="deprogFiller filler">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
-                    Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi eius
-                    quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio rerum
-                    possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum officiis
-                    dolores neque eos consequatur eveniet eum?
-                    </p>
-                    <img src="styles/images/illustrations/deprogrammation.png">
+        <div id="contenu">
+            <section class="ponctualite" id="ponctualite">
+                <div class="title">
+                    <h2>Pourcentage de ponctualité des RER et Transiliens de 2014 à 2022</h2>
                 </div>
-                <div>
+                <div class="chartAndControls">
+                    <div class="button-container-ponctualite">
+                        <button id="toggleLigneA" alt="Activer/désactiver la ligne A"></button>
+                        <button id="toggleLigneB" alt="Activer/désactiver la ligne B"></button>
+                        <button id="toggleLigneC" alt="Activer/désactiver la ligne C"></button>
+                        <button id="toggleLigneD" alt="Activer/désactiver la ligne D"></button>
+                        <button id="toggleLigneE" alt="Activer/désactiver la ligne E"></button>
+                        <button id="toggleLigneH" alt="Activer/désactiver la ligne H"></button>
+                        <button id="toggleLigneJ" alt="Activer/désactiver la ligne J"></button>
+                        <button id="toggleLigneK" alt="Activer/désactiver la ligne K"></button>
+                        <button id="toggleLigneL" alt="Activer/désactiver la ligne L"></button>
+                        <button id="toggleLigneN" alt="Activer/désactiver la ligne N"></button>
+                        <button id="toggleLigneP" alt="Activer/désactiver la ligne P"></button>
+                        <button id="toggleLigneR" alt="Activer/désactiver la ligne R"></button>
+                        <button id="toggleLigneU" alt="Activer/désactiver la ligne U"></button>
+                        <button id="toggleGeneral" alt="Activer/désactiver toutes les lignes" class="hidden"></button>
+                    </div>
                     <div>
-                        <div class="tableauDeprog">
-                        </div>
-                        <div class="ligneDeprogInf">
-                            <div class="logoDeprogInf">ligne</div>
-                            <div class="anneeDeprogInf">année</div>
-                            <div class="pourcentageDeprogInf">pourcentage</div>
-                            <div class="trainsDeprogInf">
-                            <button id="deprogLignePrecedente" alt="Aller à la ligne précédente"></button><button id="deprogLigneSuivante" alt="Aller à la ligne suivante"></button></div>
+                        <div class="chart-container-ponctualite">
+                            <canvas id="ponctualiteChart"></canvas>
                         </div>
                         <small>
-                            Source : <a href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
+                            Source : <a
+                                href="https://www.qualitetransports.gouv.fr/les-rapports-annuels-de-l-aqst-r173.html">qualitetransports.gouv</a>
                         </small>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="occupation" id="occupation">
-            <div class="title">
-                <h2>Pourcentage d'occupation des trains de 2018 à 2023</h2>
-            </div>
-            <div class="chartAndControls">
+            <section class="deprogrammation" id="deprogrammation">
+                <div class="title">
+                    <h2>Pourcentage de déprogrammation des trains de 2020 à 2023</h2>
+                </div>
+                <div class="chartAndControls">
+                    <div class="deprogFiller filler">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
+                            Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi
+                            eius
+                            quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio
+                            rerum
+                            possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum
+                            officiis
+                            dolores neque eos consequatur eveniet eum?
+                        </p>
+                        <img src="styles/images/illustrations/deprogrammation.png">
+                    </div>
+                    <div>
+                        <div>
+                            <div class="tableauDeprog">
+                            </div>
+                            <div class="ligneDeprogInf">
+                                <div class="logoDeprogInf">ligne</div>
+                                <div class="anneeDeprogInf">année</div>
+                                <div class="pourcentageDeprogInf">pourcentage</div>
+                                <div class="trainsDeprogInf">
+                                    <button id="deprogLignePrecedente"
+                                        alt="Aller à la ligne précédente"></button><button id="deprogLigneSuivante"
+                                        alt="Aller à la ligne suivante"></button>
+                                </div>
+                            </div>
+                            <small>
+                                Source : <a
+                                    href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="occupation" id="occupation">
+                <div class="title">
+                    <h2>Pourcentage d'occupation des trains de 2018 à 2023</h2>
+                </div>
+                <div class="chartAndControls">
 
                     <div class="tableau">
                         <div class="tableauOccupation">
                         </div>
                         <small>
-                            Source : <a href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
+                            Source : <a
+                                href="https://www.autorite-transports.fr/observatoire-des-transports/jeux-de-donnees-en-open-data/">autorite-transports.fr</a>
                         </small>
-                        <div class="controlesOccupation"><button id="occupationLignePrecedente" alt="Aller à la ligne précédente"></button><button id="occupationLigneSuivante" alt="Aller à la ligne suivante"></button></div>
+                        <div class="controlesOccupation"><button id="occupationLignePrecedente"
+                                alt="Aller à la ligne précédente"></button><button id="occupationLigneSuivante"
+                                alt="Aller à la ligne suivante"></button></div>
                     </div>
 
-                <div class="occupationFiller filler">
-                    <img src="styles/images/illustrations/occupation.png">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
-                    Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi eius
-                    quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio rerum
-                    possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum officiis
-                    dolores neque eos consequatur eveniet eum?
-                    </p>
+                    <div class="occupationFiller filler">
+                        <img src="styles/images/illustrations/occupation.png">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
+                            Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi
+                            eius
+                            quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio
+                            rerum
+                            possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum
+                            officiis
+                            dolores neque eos consequatur eveniet eum?
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+        </div>
+        <section id="footer">
+            <footer>
+                <img src="styles/images/SNRF.png" alt="Logo SNRF">
+                <a href="mentionslegales.html">Mentions légales</a>
+            </footer>
         </section>
-    </div>
-    <section id="footer">
-        <footer>
-            <img src="styles/images/SNRF.png" alt="Logo SNRF">
-            <a href="mentionslegales.html">Mentions légales</a>
-        </footer>
-    </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

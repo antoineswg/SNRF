@@ -78,7 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // détecte un clic sur chaque bouton et affiche/masque la ligne qui correspond
             toggleButtons.forEach((id, index) => {
                 document.getElementById(id).addEventListener('click', function() {
-                    myChart.data.datasets[index].hidden = !myChart.data.datasets[index].hidden;
+                    const dataset = myChart.data.datasets[index];
+                    dataset.hidden = !dataset.hidden;
+                    this.style.backgroundImage = dataset.hidden 
+                        ? `url('styles/images/logosLignes/${id.replace('toggle', '').toLowerCase()}LogoDead.png')` 
+                        : `url('styles/images/logosLignes/${id.replace('toggle', '').toLowerCase()}Logo.png')`;
                     myChart.update();
                 });
             });
@@ -87,8 +91,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const toggleAllButton = document.getElementById('toggleGeneral');
             toggleAllButton.addEventListener('click', function() {
                 const isHidden = toggleAllButton.classList.contains('hidden');
-                myChart.data.datasets.forEach(dataset => {
+                myChart.data.datasets.forEach((dataset, index) => {
                     dataset.hidden = !isHidden;
+                    document.getElementById(toggleButtons[index]).style.backgroundImage = dataset.hidden 
+                        ? `url('styles/images/logosLignes/${toggleButtons[index].replace('toggle', '').toLowerCase()}LogoDead.png')` 
+                        : `url('styles/images/logosLignes/${toggleButtons[index].replace('toggle', '').toLowerCase()}Logo.png')`;
                 });
                 toggleAllButton.classList.toggle('hidden', !isHidden);
                 toggleAllButton.classList.toggle('shown', isHidden);
