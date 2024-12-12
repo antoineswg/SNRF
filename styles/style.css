@@ -57,6 +57,8 @@ body {
     position: relative;
     min-width: 1200px;
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
     background-color: #FDFDFD;
 }
 
@@ -232,9 +234,14 @@ footer a:hover{
 
 .titreMentionsLegales a{
     margin-right: 40px;
-    
 }
 
 .titreMentionsLegales img{
     height: 40px;
+}
+
+#contenu {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; 
 }

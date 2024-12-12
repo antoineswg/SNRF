@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/ponctualite.css">
     <link rel="stylesheet" href="styles/deprogrammation.css">
     <link rel="stylesheet" href="styles/occupation.css">
+    <link rel="stylesheet" href="styles/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
@@ -41,7 +42,7 @@
                     trains bondés, les transports en commun franciliens ont connu une nette amélioration de leur qualité
                     de service ces dernières années.
                 </p>
-                <a href="index.html#contenu"><img src="styles/images/svg/fleche-bas-vert.svg" alt=""></a>
+                <a href="index.html#contenu"><img src="styles/images/svg/fleche-bas-vert.svg" class="bopUpDown"></a>
             </div>
         </section>
         <div id="contenu">
@@ -49,7 +50,7 @@
                 <div class="title">
                     <h2>Pourcentage de ponctualité des RER et Transiliens de 2014 à 2022</h2>
                 </div>
-                <div class="chartAndControls">
+                <div class="chartAndControls right1 hiddenRight">
                     <div class="button-container-ponctualite">
                         <button id="toggleLigneA" alt="Activer/désactiver la ligne A"></button>
                         <button id="toggleLigneB" alt="Activer/désactiver la ligne B"></button>
@@ -71,6 +72,7 @@
                             <canvas id="ponctualiteChart"></canvas>
                         </div>
                         <small>
+                            On considère un train en retard s'il a plus de 5 minutes de retard sur l'horaire prévu. <br>
                             Source : <a
                                 href="https://www.qualitetransports.gouv.fr/les-rapports-annuels-de-l-aqst-r173.html">qualitetransports.gouv</a>
                         </small>
@@ -82,22 +84,17 @@
                 <div class="title">
                     <h2>Pourcentage de déprogrammation des trains de 2020 à 2023</h2>
                 </div>
-                <div class="chartAndControls">
+                <div class="chartAndControls left1 hiddenLeft">
                     <div class="deprogFiller filler">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
-                            Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi
-                            eius
-                            quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio
-                            rerum
-                            possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum
-                            officiis
-                            dolores neque eos consequatur eveniet eum?
+                            Entre 2020 et 2023, le nombre de déprogrammations de RER et Transiliens a significativement diminué, une avancée majeure pour les usagers. Cela fluidifie le trafic, améliore la ponctualité et réduit considérablement les frustrations des voyageurs. Cette évolution positive rend les trajets du quotidien plus agréables et moins stressants. 
+                            <br><br>
+                            Utilisez les flèches du panneau d'affichage pour naviguer entre les différentes lignes !
                         </p>
                         <img src="styles/images/illustrations/deprogrammation.png">
                     </div>
                     <div>
-                        <div>
+                        <div class="test2">
                             <div class="tableauDeprog">
                             </div>
                             <div class="ligneDeprogInf">
@@ -123,7 +120,7 @@
                 <div class="title">
                     <h2>Pourcentage d'occupation des trains de 2018 à 2023</h2>
                 </div>
-                <div class="chartAndControls">
+                <div class="chartAndControls right2 hiddenRight">
 
                     <div class="tableau">
                         <div class="tableauOccupation">
@@ -140,14 +137,9 @@
                     <div class="occupationFiller filler">
                         <img src="styles/images/illustrations/occupation.png">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, soluta!
-                            Quibusdam corporis temporibus soluta excepturi nesciunt, cumque, accusantium fugit eligendi
-                            eius
-                            quasi repellendus doloribus sit beatae voluptate architecto nemo aspernatur neque optio
-                            rerum
-                            possimus. Odit eligendi voluptatibus esse consectetur corrupti, reiciendis libero rerum
-                            officiis
-                            dolores neque eos consequatur eveniet eum?
+                            Entre 2018 et 2023, les RER et Transiliens ont affiché un taux d'occupation stable, sauf en 2020 et 2021, où une mystérieuse baisse a été observée, on se demande bien pourquoi. En tout cas depuis le trafic a repris son cours normal, avec un taux d'occupation supérieur sur les grandes lignes.
+                            <br><br>
+                            Utilisez les flèches en dessous du tableau pour naviguer entre les différentes lignes !
                         </p>
                     </div>
                 </div>
@@ -165,6 +157,7 @@
     <script src="js/ponctualite.js"></script>
     <script src="js/deprogrammation.js"></script>
     <script src="js/occupation.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

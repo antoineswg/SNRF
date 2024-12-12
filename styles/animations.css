@@ -1,0 +1,39 @@
+@keyframes bopUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.bopUpDown{
+    animation: bopUpDown 2s ease-out infinite;
+
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(150vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInFromRight {
+    animation: slideInFromRight 0.75s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInFromLeft {
+    animation: slideInFromLeft 0.75s ease-out forwards;
+}
