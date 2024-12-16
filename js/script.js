@@ -26,14 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.classList.remove("hiddenLeft");
           entry.target.classList.add("slideInFromLeft");
-          observerLeft.unobserve(entry.target); // Stop observing after adding the class
+          observerLeft.unobserve(entry.target); 
         }
       });
     },
     {
-      threshold: 0.1, // Adjust as needed
+      threshold: 0.1, 
     }
   );
 
   elementsToObserveLeft.forEach((element) => observerLeft.observe(element));
+
 });
